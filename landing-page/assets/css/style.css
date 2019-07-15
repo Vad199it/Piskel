@@ -1,0 +1,125 @@
+body {
+  background: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  height: 300px;
+}
+
+h1 {
+  display: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+.page-header {
+  background: #2D2D2D;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.header-container {
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header .piskel-clone {
+  font-family: Arial;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0 -1px 0 #000;
+  cursor: default;
+}
+
+.header-buttons a {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+  border-style: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: gold;
+}
+
+.hero {
+  padding-bottom: 70px;
+  background: #3f3f3f;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-info {
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 20px;
+  max-width: 585px;
+  font-family: Helvetica;
+  font-size: 25px;
+}
+
+.hero-info .hero-title {
+  color: white;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-info .hero-title  a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-info .hero-title  a:hover {
+  text-decoration: underline;
+}
+
+
+.hero-buttons {
+  margin-top: 50px;
+}
+
+.sign-in {
+  margin-right: 10px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  border-style: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: gold;
+}
+
+.hero .hero-screenshots {
+  margin-top: 30px;
+  height: 390px;
+  width: 100%;
+  background: url('../img/picture.png') left top no-repeat;
+  background-size: cover;
+}

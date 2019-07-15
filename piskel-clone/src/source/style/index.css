@@ -1,0 +1,696 @@
+body {
+    line-height: 1;
+    background: #1D1D1D;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #2D2D2D;
+    padding: 5px 10px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.page-header .piskel-clone {
+    cursor: default;
+    height: 24px;
+}
+
+.piskel-clone-span{
+    font-size: 16pt;
+    color: #888;
+    text-shadow: 0 -1px 0 #000;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.page-header .auth {
+    display: flex;
+    align-items: center;
+}
+
+.page-header .profile-container {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 2px;
+    color: black;
+    background-color: gold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools-container {
+    z-index: 10;
+    height: 100%;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.frames-select {
+    height: 100%;
+    max-height: calc(100vh - 58px);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.frames-select:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.menu {
+    width: 200px;
+    max-height: calc(100vh - 58px);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.tool-size {
+    position: relative;
+}
+
+.tools-select, .tool-size {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 94px;
+    padding: 4px;
+}
+
+.tool-size .description {
+    position: absolute;
+    padding: 3px;
+    bottom: 110%;
+    display: none;
+    flex-direction: column;
+    width: calc(100% - 12px);
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+}
+
+.tool-size .description-title {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.tool-size .description-text {
+    font-size: 11px;
+}
+
+.tool-size .active {
+    background-color: rgb(231, 207, 84);
+    border-color: rgb(231, 207, 84);
+}
+
+.tool-size .px1 {
+    box-shadow: inset 0 0 0 5px #000;
+}
+
+.tool-size .px2 {
+    box-shadow: inset 0 0 0 4px #000;
+}
+
+.tool-size .px3 {
+    box-shadow: inset 0 0 0 3px #000;
+}
+
+.tool-size .px4 {
+    box-shadow: inset 0 0 0 2px #000;
+}
+
+.size {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 2px solid rgba(53, 64, 71, 0.6);
+    cursor: pointer;
+}
+
+.tools-select {
+    margin-bottom: 6px;
+}
+
+.tools-select .tool {
+    position: relative;
+    height: 46px;
+    width: 46px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 46px;
+    background-color: rgba(69, 66, 71, 0.67);
+}
+
+.choose-color {
+    position: relative;
+}
+
+.choose-color .second-color {
+    z-index: 9;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 3px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+}
+
+input[type="color" i] {
+    -webkit-appearance: square-button;
+    width: 44px;
+    height: 23px;
+    cursor: default;
+    border-image: initial;
+    padding: 1px 2px;
+}
+
+.choose-color .color {
+    z-index: 10;
+    position: absolute;
+    left: 15px;
+    top: -5px;
+    width: 55px;
+    height: 55px;
+    border-radius: 3px;
+}
+
+.fa, .fas {
+    font-family: 'Font Awesome 5 Free', serif;
+    font-weight: 900;
+}
+
+.frames-container {
+    position: relative;
+    overflow-y: scroll;
+    max-height: calc(100vh - 150px);
+    opacity: 0.99;
+}
+
+.frames-container .target-position {
+    position: relative;
+    z-index: 8;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.frames-container :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.frames-select .addFrame-button {
+    width: 100%;
+    height: 35px;
+    padding: 0;
+    margin-top: 10px;
+    color: #fff;
+    font-family: Arial;
+    font-size: 15px;
+    word-wrap: unset;
+    background: #222;
+    border: 4px solid rgba(93, 90, 95, 0.36);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.fa, .fas, .far, .fal, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.preview-container .delete-button {
+    top: 0;
+}
+
+.preview-container .delete-button, .preview-container .copy-button, .preview-container .move-button {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    background: inherit;
+    border: none;
+    border-radius: 2px;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.preview-container .copy-button {
+    bottom: 0;
+}
+
+.preview-container .move-button {
+    bottom: 0;
+    left: 0;
+}
+.preview-container-wrapper .preview-container.selected {
+    border-color: rgb(231, 207, 84);
+}
+
+.frames-container::-webkit-scrollbar {
+    display: none;
+}
+
+.frames-select .preview-container {
+    position: relative;
+    margin-bottom: 15px;
+    border: 2px solid #929794;
+    border-radius: 3px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+}
+
+.preview-container {
+    position: relative;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+}
+
+.frames-container .preview-container-wrapper {
+    position: relative;
+    z-index: 10;
+}
+
+.frames-select .frame {
+    width: 100px;
+    height: 100px;
+    vertical-align: bottom;
+    image-rendering: pixelated;
+}
+
+.frames-select .selected .frame-number {
+    background: rgb(231, 207, 84);
+}
+
+.preview-container .frame-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: Arial;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    opacity: 0.7;
+    background: #849797;
+}
+
+.layers-container {
+    display: flex;
+    width: 100%;
+    height: calc(98vh - 58px);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #A2A2A2;
+}
+
+.preview-menu .preview-container-wrapper {
+    position: relative;
+}
+
+.canvas-container {
+    position: relative;
+    transform: scale(1);
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+}
+
+.canvas-container .additional-layer {
+    z-index: 20;
+    opacity: 0.15;
+}
+
+.canvas-container .hover-layer {
+    z-index: 60;
+}
+
+.animation-speed {
+    display: flex;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.animation-speed .FPS-range {
+    width: 60%;
+}
+
+input[type=range] {
+    width: 100%;
+    background: transparent;
+}
+
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+div {
+    display: block;
+}
+ body {
+     line-height: 1;
+ }
+
+
+
+.animation-speed .FPS-label {
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.preview-container .full-screen-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 0;
+    color: #fff;
+    background: inherit;
+    border: none;
+}
+
+.tool .description .shortcut {
+    color: gold;
+}
+
+.tools-select .selected {
+    box-shadow: inset 0 0 0 1px rgb(231, 207, 84);
+}
+
+.preview-menu .export {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-left: 25px;
+}
+.export .export-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+.export button {
+    padding: 1px 5px;
+    margin-left: 105px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.preview-container .preview {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    image-rendering: pixelated;
+}
+
+.canvas-container .layer, .canvas-container .hover-layer, .canvas-container .additional-layer {
+    z-index: 50;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    vertical-align: bottom;
+    image-rendering: pixelated;
+}
+
+.layers-menu .layers-control {
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+}
+.layers-control .title {
+    align-self: center;
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+.layers-menu .layers-control button {
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    background: none;
+    border: 1px solid rgba(173, 173, 190, 0.42);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.layers-menu .layers-list {
+    max-height: calc(100vh - 444px);
+    overflow: scroll;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.layers-menu .layers-list:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.menu .layers-menu {
+    margin-top: 20px;
+    border: 2px solid rgba(141, 143, 166, 0.64);
+    border-radius: 3px;
+    background: #1D1D1D;;
+    max-height: 165px;
+    overflow: hidden;
+}
+.menu .layers-menu:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.layers-menu .layers-list .active {
+    background: rgba(69, 66, 71, 0.67);
+}
+.layers-list::-webkit-scrollbar {
+    display: none;
+}
+
+.layers-menu .layers-list .layer {
+    line-height: 25px;
+    padding-left: 25px;
+    border-top: 1px solid rgba(69, 66, 71, 0.67);
+    cursor: pointer;
+}
+
+.canvas-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.menu .canvas-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(231, 207, 84);
+}
+
+.canvas-info span {
+    margin-bottom: 5px;
+}
+.canvas-size {
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.canvas-size .size {
+    align-content: center;
+    height: 20px;
+    width: 65px;
+    padding: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid rgba(140, 142, 151, 0.58);
+    background: none;
+}
+.canvas-size .active {
+    color: rgb(231, 207, 84);
+    border: 2px solid rgb(231, 207, 84);
+}
+.canvas-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.hot-keys {
+    background-color: inherit;
+    width: 64px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-keyboard {
+   color: rgb(231, 207, 84);
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #000;
+    transition: 0.3s all;
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+.modal_cross {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    right: 65px;
+    fill: #444;
+    cursor: pointer;
+    color: goldenrod;
+}
+
+.shortcut-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 72%;
+    margin: 0 auto;
+}
+
+.shortcut {
+    list-style-type: none;
+    width: 320px;
+    display: flex;
+    border: 3px solid rgba(156, 160, 154, 0.99);
+    margin: 5px;
+    padding: 5px;
+}
+
+.shortcut-block {
+    margin-right: 10px;
+    padding: 5px;
+    border: 3px solid yellow;
+    color: yellow;
+}
+
+.shortcut-name {
+    color: white;
+    margin-top: 5px;
+}
+
+.modal.active, .overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.abcRioButtonContentWrapper {
+    background: #2D2D2D;
+    color: goldenrod;
+    display: flex;
+}
+
+.addFrame-button span{
+    margin-left: 5px;
+}
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins,
+kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside,
+canvas, details, embed, figure,
+figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}

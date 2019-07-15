@@ -1,0 +1,433 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Frames.addFrame test-1 1`] = `"<div class=\\"container\\"><header class=\\"page-header\\"><img class=\\"piskel-clone\\" src=\\"../src/source/image/logo_transparent_small_compact.png\\"><span class=\\"piskel-clone-span\\"></span><div class=\\"auth\\"><div class=\\"profile-container\\"><span class=\\"profile-username\\"></span><div class=\\"profile-image\\"></div></div><div class=\\"g-signin2\\"></div></div></header><main><div class=\\"tools-container\\"></div><div class=\\"frames-select\\"></div><div class=\\"layers-container\\"></div><div class=\\"menu\\"></div></main></div>"`;
+
+exports[`Frames.addFrame test-2 1`] = `
+"<div class=\\"container\\"><header class=\\"page-header\\"><img class=\\"piskel-clone\\" src=\\"../src/source/image/logo_transparent_small_compact.png\\"><span class=\\"piskel-clone-span\\"></span><div class=\\"auth\\"><div class=\\"profile-container\\"><span class=\\"profile-username\\"></span><div class=\\"profile-image\\"></div></div><div class=\\"g-signin2\\"></div></div></header><main><div class=\\"tools-container\\"></div><div class=\\"frames-select\\">
+  <div class=\\"frames-container\\"></div>
+     <button class=\\"addFrame-button\\"><i class=\\"fas fa-plus-square\\"></i><span>Add Frame</span></button>
+  </div><div class=\\"layers-container\\"></div><div class=\\"menu\\"></div></main></div>"
+`;
+
+exports[`Frames.addFrame test-3 1`] = `
+"<div class=\\"container\\"><header class=\\"page-header\\"><img class=\\"piskel-clone\\" src=\\"../src/source/image/logo_transparent_small_compact.png\\"><span class=\\"piskel-clone-span\\"></span><div class=\\"auth\\"><div class=\\"profile-container\\"><span class=\\"profile-username\\"></span><div class=\\"profile-image\\"></div></div><div class=\\"g-signin2\\"></div></div></header><main><div class=\\"tools-container\\"></div><div class=\\"frames-select\\">
+  <div class=\\"frames-container\\"></div>
+     <button class=\\"addFrame-button\\"><i class=\\"fas fa-plus-square\\"></i><span>Add Frame</span></button>
+  </div><div class=\\"layers-container\\">
+    <div class=\\"canvas-container\\">
+        <canvas width=\\"32\\" height=\\"32\\" class=\\"additional-layer\\"></canvas>
+        <canvas width=\\"32\\" height=\\"32\\" class=\\"hover-layer\\"></canvas>
+        <canvas width=\\"32\\" height=\\"32\\" class=\\"layer\\"></canvas>
+    </div>
+  </div><div class=\\"menu\\">
+  <div class=\\"layers-menu\\">
+    <div class=\\"layers-control\\">
+      <span class=\\"title\\">Layers</span>
+      <button class=\\"layer-add\\"><i class=\\"fas fa-plus\\"></i></button>
+      <button class=\\"layer-up\\"><i class=\\"fas fa-chevron-up\\"></i></button>
+      <button class=\\"layer-down\\"><i class=\\"fas fa-chevron-down\\"></i></button>
+      <button class=\\"layer-remove\\"><i class=\\"fas fa-times\\"></i></button>
+    </div>
+    <ul class=\\"layers-list\\">
+    </ul>
+  </div>
+
+  <div class=\\"canvas-menu\\">
+  
+    <div class=\\"canvas-size\\">
+      <button class=\\"size px32 active\\">32X32</button>
+      <button class=\\"size px64\\">64X64</button>
+      <button class=\\"size px128\\">128X128</button>
+    </div>
+    
+    <div class=\\"canvas-info\\">
+        <span class=\\"coords\\"></span>
+    </div>
+  </div></div></main></div>"
+`;
+
+exports[`Frames.addFrame test-4 1`] = `
+"<div class=\\"container\\"><header class=\\"page-header\\"><img class=\\"piskel-clone\\" src=\\"../src/source/image/logo_transparent_small_compact.png\\"><span class=\\"piskel-clone-span\\"></span><div class=\\"auth\\"><div class=\\"profile-container\\"><span class=\\"profile-username\\"></span><div class=\\"profile-image\\"></div></div><div class=\\"g-signin2\\"></div></div></header><main><div class=\\"tools-container\\">
+  <ul class=\\"tool-size\\">
+          <div class=\\"description\\">
+            <span class=\\"description-title\\">Pen size</span>
+            <p class=\\"description-text\\">from 1 to 4 pixels</p>
+          </div>
+          <li class=\\"size px1\\"></li>
+          <li class=\\"size px2\\"></li>
+          <li class=\\"size px3\\"></li>
+          <li class=\\"size px4\\"></li>
+        </ul>
+
+        <ul class=\\"tools-select\\">
+          <li class=\\"tool pen\\">
+            <i class=\\"fas fa-pen\\"></i>
+          </li>
+          <li class=\\"tool mirror-pen\\">
+            <i class=\\"fas fa-grip-lines-vertical\\"></i>
+          </li>
+          <li class=\\"tool paint-bucket\\">
+            <i class=\\"fas fa-fill-drip\\"></i>
+          </li>
+          <li class=\\"tool paint-bucket-all\\">
+            <i class=\\"fas fa-paint-roller\\"></i>
+          </li>
+          <li class=\\"tool eraser\\">
+            <i class=\\"fas fa-eraser\\"></i>
+            </li>
+          <li class=\\"tool stroke\\">
+            <i class=\\"fas fa-minus\\"></i>
+          </li>
+          <li class=\\"tool rect\\">
+            <i class=\\"far fa-square\\"></i>
+            </li>
+            <li class=\\"tool ellipse\\">
+            <i class=\\"far fa-circle\\"></i>
+            </li>
+            <li class=\\"tool triangle\\">
+            <i class=\\"fas fa-caret-up fa-2x\\"></i>
+          </li>
+          <li class=\\"tool dithering\\">
+            <i class=\\"fas fa-chess-board\\"></i>
+            </li>
+            <li class=\\"tool magic-eraser\\">
+            <i class=\\"fas fa-magic\\"></i>
+            </li>
+            <li class=\\"tool move\\">
+            <i class=\\"fas fa-hand-paper\\"></i>
+           </li>
+          <li class=\\"tool darken\\">
+            <i class=\\"fas fa-moon\\"></i>
+           </li>
+          <li class=\\"tool lighten\\">
+            <i class=\\"fas fa-sun\\"></i>
+           </li>
+          <li class=\\"tool color-picker\\">
+            <i class=\\"fas fa-eye-dropper\\"></i>
+          </li>
+        </ul>
+
+        <div class=\\"choose-color\\">
+          <input type=\\"color\\" name=\\"second-color\\" class=\\"second-color\\" value=\\"#ffffff\\">
+          <input type=\\"color\\" name=\\"color\\" class=\\"color\\">
+        </div>
+        
+        <button class=\\"hot-keys\\">
+        <i class=\\"fas fa-keyboard fa-3x\\"></i>
+        </button>
+        
+        <div class=\\"modal\\">
+            <div class=\\"modal_cross\\"><i class=\\"far fa-times-circle fa-2x\\"></i></div>
+            <ul class=\\"shortcut-container\\">
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">P</div>
+                     <p class=\\"shortcut-name\\">Pen tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">C</div>
+                     <p class=\\"shortcut-name\\">MirrorPen Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">B</div>
+                     <p class=\\"shortcut-name\\">PaintBucket Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">A</div>
+                     <p class=\\"shortcut-name\\">PaintBucketAll Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">E</div>
+                     <p class=\\"shortcut-name\\">Eraser Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">M</div>
+                     <p class=\\"shortcut-name\\">MagicErser Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">S</div>
+                     <p class=\\"shortcut-name\\">Stroke Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">R</div>
+                     <p class=\\"shortcut-name\\">Rect Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">C</div>
+                     <p class=\\"shortcut-name\\">Ellipse Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">T</div>
+                     <p class=\\"shortcut-name\\">Triangle Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">D</div>
+                     <p class=\\"shortcut-name\\">Brightness(-) Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">L</div>
+                     <p class=\\"shortcut-name\\">Brightness(+) Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">J</div>
+                     <p class=\\"shortcut-name\\">Move tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">I</div>
+                     <p class=\\"shortcut-name\\">Dithering tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">O</div>
+                     <p class=\\"shortcut-name\\">Color Picker tool</p>
+                 </li>
+            </ul>
+       </div>
+       
+        <div class=\\"overlay\\" id=\\"overlay-modal\\"></div> </div><div class=\\"frames-select\\">
+  <div class=\\"frames-container\\"></div>
+     <button class=\\"addFrame-button\\"><i class=\\"fas fa-plus-square\\"></i><span>Add Frame</span></button>
+  </div><div class=\\"layers-container\\">
+    <div class=\\"canvas-container\\">
+        <canvas width=\\"32\\" height=\\"32\\" class=\\"additional-layer\\"></canvas>
+        <canvas width=\\"32\\" height=\\"32\\" class=\\"hover-layer\\"></canvas>
+        <canvas width=\\"32\\" height=\\"32\\" class=\\"layer\\"></canvas>
+    </div>
+  </div><div class=\\"menu\\">
+  <div class=\\"layers-menu\\">
+    <div class=\\"layers-control\\">
+      <span class=\\"title\\">Layers</span>
+      <button class=\\"layer-add\\"><i class=\\"fas fa-plus\\"></i></button>
+      <button class=\\"layer-up\\"><i class=\\"fas fa-chevron-up\\"></i></button>
+      <button class=\\"layer-down\\"><i class=\\"fas fa-chevron-down\\"></i></button>
+      <button class=\\"layer-remove\\"><i class=\\"fas fa-times\\"></i></button>
+    </div>
+    <ul class=\\"layers-list\\">
+    </ul>
+  </div>
+
+  <div class=\\"canvas-menu\\">
+  
+    <div class=\\"canvas-size\\">
+      <button class=\\"size px32 active\\">32X32</button>
+      <button class=\\"size px64\\">64X64</button>
+      <button class=\\"size px128\\">128X128</button>
+    </div>
+    
+    <div class=\\"canvas-info\\">
+        <span class=\\"coords\\"></span>
+    </div>
+  </div></div></main></div>"
+`;
+
+exports[`Frames.addFrame test-5 1`] = `
+"<div class=\\"container\\"><header class=\\"page-header\\"><img class=\\"piskel-clone\\" src=\\"../src/source/image/logo_transparent_small_compact.png\\"><span class=\\"piskel-clone-span\\"></span><div class=\\"auth\\"><div class=\\"profile-container\\"><span class=\\"profile-username\\"></span><div class=\\"profile-image\\"></div></div><div class=\\"g-signin2\\"></div></div></header><main><div class=\\"tools-container\\">
+  <ul class=\\"tool-size\\">
+          <div class=\\"description\\">
+            <span class=\\"description-title\\">Pen size</span>
+            <p class=\\"description-text\\">from 1 to 4 pixels</p>
+          </div>
+          <li class=\\"size px1\\"></li>
+          <li class=\\"size px2\\"></li>
+          <li class=\\"size px3\\"></li>
+          <li class=\\"size px4\\"></li>
+        </ul>
+
+        <ul class=\\"tools-select\\">
+          <li class=\\"tool pen\\">
+            <i class=\\"fas fa-pen\\"></i>
+          </li>
+          <li class=\\"tool mirror-pen\\">
+            <i class=\\"fas fa-grip-lines-vertical\\"></i>
+          </li>
+          <li class=\\"tool paint-bucket\\">
+            <i class=\\"fas fa-fill-drip\\"></i>
+          </li>
+          <li class=\\"tool paint-bucket-all\\">
+            <i class=\\"fas fa-paint-roller\\"></i>
+          </li>
+          <li class=\\"tool eraser\\">
+            <i class=\\"fas fa-eraser\\"></i>
+            </li>
+          <li class=\\"tool stroke\\">
+            <i class=\\"fas fa-minus\\"></i>
+          </li>
+          <li class=\\"tool rect\\">
+            <i class=\\"far fa-square\\"></i>
+            </li>
+            <li class=\\"tool ellipse\\">
+            <i class=\\"far fa-circle\\"></i>
+            </li>
+            <li class=\\"tool triangle\\">
+            <i class=\\"fas fa-caret-up fa-2x\\"></i>
+          </li>
+          <li class=\\"tool dithering\\">
+            <i class=\\"fas fa-chess-board\\"></i>
+            </li>
+            <li class=\\"tool magic-eraser\\">
+            <i class=\\"fas fa-magic\\"></i>
+            </li>
+            <li class=\\"tool move\\">
+            <i class=\\"fas fa-hand-paper\\"></i>
+           </li>
+          <li class=\\"tool darken\\">
+            <i class=\\"fas fa-moon\\"></i>
+           </li>
+          <li class=\\"tool lighten\\">
+            <i class=\\"fas fa-sun\\"></i>
+           </li>
+          <li class=\\"tool color-picker\\">
+            <i class=\\"fas fa-eye-dropper\\"></i>
+          </li>
+        </ul>
+
+        <div class=\\"choose-color\\">
+          <input type=\\"color\\" name=\\"second-color\\" class=\\"second-color\\" value=\\"#ffffff\\">
+          <input type=\\"color\\" name=\\"color\\" class=\\"color\\">
+        </div>
+        
+        <button class=\\"hot-keys\\">
+        <i class=\\"fas fa-keyboard fa-3x\\"></i>
+        </button>
+        
+        <div class=\\"modal\\">
+            <div class=\\"modal_cross\\"><i class=\\"far fa-times-circle fa-2x\\"></i></div>
+            <ul class=\\"shortcut-container\\">
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">P</div>
+                     <p class=\\"shortcut-name\\">Pen tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">C</div>
+                     <p class=\\"shortcut-name\\">MirrorPen Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">B</div>
+                     <p class=\\"shortcut-name\\">PaintBucket Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">A</div>
+                     <p class=\\"shortcut-name\\">PaintBucketAll Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">E</div>
+                     <p class=\\"shortcut-name\\">Eraser Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">M</div>
+                     <p class=\\"shortcut-name\\">MagicErser Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">S</div>
+                     <p class=\\"shortcut-name\\">Stroke Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">R</div>
+                     <p class=\\"shortcut-name\\">Rect Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">C</div>
+                     <p class=\\"shortcut-name\\">Ellipse Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">T</div>
+                     <p class=\\"shortcut-name\\">Triangle Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">D</div>
+                     <p class=\\"shortcut-name\\">Brightness(-) Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">L</div>
+                     <p class=\\"shortcut-name\\">Brightness(+) Tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">J</div>
+                     <p class=\\"shortcut-name\\">Move tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">I</div>
+                     <p class=\\"shortcut-name\\">Dithering tool</p>
+                 </li>
+                 
+                 <li class=\\"shortcut\\">
+                    <div class=\\"shortcut-block\\">O</div>
+                     <p class=\\"shortcut-name\\">Color Picker tool</p>
+                 </li>
+            </ul>
+       </div>
+       
+        <div class=\\"overlay\\" id=\\"overlay-modal\\"></div> </div><div class=\\"frames-select\\">
+  <div class=\\"frames-container\\"></div>
+     <button class=\\"addFrame-button\\"><i class=\\"fas fa-plus-square\\"></i><span>Add Frame</span></button>
+  </div><div class=\\"layers-container\\">
+    <div class=\\"canvas-container\\">
+        <canvas width=\\"32\\" height=\\"32\\" class=\\"additional-layer\\"></canvas>
+        <canvas width=\\"32\\" height=\\"32\\" class=\\"hover-layer\\"></canvas>
+        <canvas width=\\"32\\" height=\\"32\\" class=\\"layer\\"></canvas>
+    </div>
+  </div><div class=\\"menu\\">
+  <div class=\\"layers-menu\\">
+    <div class=\\"layers-control\\">
+      <span class=\\"title\\">Layers</span>
+      <button class=\\"layer-add\\"><i class=\\"fas fa-plus\\"></i></button>
+      <button class=\\"layer-up\\"><i class=\\"fas fa-chevron-up\\"></i></button>
+      <button class=\\"layer-down\\"><i class=\\"fas fa-chevron-down\\"></i></button>
+      <button class=\\"layer-remove\\"><i class=\\"fas fa-times\\"></i></button>
+    </div>
+    <ul class=\\"layers-list\\">
+    </ul>
+  </div>
+
+  <div class=\\"canvas-menu\\">
+  
+    <div class=\\"canvas-size\\">
+      <button class=\\"size px32 active\\">32X32</button>
+      <button class=\\"size px64\\">64X64</button>
+      <button class=\\"size px128\\">128X128</button>
+    </div>
+    
+    <div class=\\"canvas-info\\">
+        <span class=\\"coords\\"></span>
+    </div>
+  </div>
+    <div class=\\"preview-menu\\">
+      <div class=\\"preview-container-wrapper\\">
+        <div class=\\"preview-container\\">
+          <canvas width=\\"32\\" height=\\"32\\" class=\\"preview\\"></canvas>
+          <button class=\\"full-screen-button\\"><i class=\\"fas fa-external-link-square-alt\\"></i></button>
+        </div>
+      <div class=\\"animation-speed\\">
+        <input type=\\"range\\" name=\\"FPS\\" class=\\"FPS-range\\" min=\\"0\\" max=\\"24\\" value=\\"0\\">
+        <label for=\\"FPS\\" class=\\"FPS-label\\">FPS: <span class=\\"FPS-value\\">0</span></label>
+      </div>
+      <div class=\\"export\\">
+        <button class=\\"toApng\\">apng</button>
+      </div>
+    </div></div></div></main></div>"
+`;
